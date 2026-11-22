@@ -56,6 +56,39 @@ nav a {
 nav a:hover {
   color: #b89a61;
 }
+    .tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border: 1px solid #e8e2d5;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.tarjeta h3 {
+  color: #183653;
+  font-family: Georgia, serif;
+  margin-top: 0;
+}
+
+.tarjeta p {
+  color: #596574;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
     </style>
 </head>
 <body>
@@ -80,14 +113,39 @@ nav a:hover {
 <section id="explorar" style="padding:30px 5%;">
   <h2>Explora la Biblia</h2>
   <p>Descubre nuestros contenidos y secciones educativas.</p>
-  <ul>
-    <li>¿Te has fijado?</li>
-    <li>Conozcamos la Biblia</li>
-    <li>El mundo detrás de la Biblia</li>
-    <li>Personajes que merecen ser descubiertos</li>
-    <li>Pregunta, investiga y descubre</li>
-    <li>Textos que nos hacen pensar</li>
-  </ul>
+  <div class="tarjetas">
+
+  <article class="tarjeta">
+    <h3>¿Te has fijado?</h3>
+    <p>Observa detalles, preguntas y curiosidades que quizá nunca habías descubierto en la Biblia.</p>
+  </article>
+
+  <article class="tarjeta">
+    <h3>Conozcamos la Biblia</h3>
+    <p>Descubre sus libros, su formación, sus autores y la riqueza de sus textos.</p>
+  </article>
+
+  <article class="tarjeta">
+    <h3>El mundo detrás de la Biblia</h3>
+    <p>Explora la historia, la geografía, las culturas y las costumbres del mundo bíblico.</p>
+  </article>
+
+  <article class="tarjeta">
+    <h3>Personajes que merecen ser descubiertos</h3>
+    <p>Acércate a hombres y mujeres cuyas historias dejaron huella en la tradición bíblica.</p>
+  </article>
+
+  <article class="tarjeta">
+    <h3>Pregunta, investiga y descubre</h3>
+    <p>Formula preguntas, busca respuestas y profundiza mediante la investigación.</p>
+  </article>
+
+  <article class="tarjeta">
+    <h3>Textos que nos hacen pensar</h3>
+    <p>Lee, reflexiona y descubre diferentes dimensiones de los textos bíblicos.</p>
+  </article>
+
+  </div>
 </section>
 
 <footer style="padding:25px 5%;text-align:center;">
